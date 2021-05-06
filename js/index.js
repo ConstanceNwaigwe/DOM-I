@@ -75,3 +75,21 @@ p[6].innerHTML = siteContent["contact"]["phone"];
 p[7].innerHTML = siteContent["contact"]["email"];
 
 p[8].innerHTML = siteContent["footer"]["copyright"];
+
+//changing style of page
+//document.getElementsByTagName("a")[0].style.color = "green";
+//document.getElementsByTagName("nav")[0].style.color = "red";
+
+let dom = document.createElement("a");
+let textdom = document.createTextNode("DOM");
+dom.appendChild(textdom);
+document.getElementsByTagName("nav")[0].appendChild(dom);
+
+let awesome = document.createElement("a");
+let textawesome = document.createTextNode("Awesome");
+awesome.appendChild(textawesome);
+document.getElementsByTagName("nav")[0].appendChild(awesome);
+
+for(let i = 0; i <= 7; i++){
+  a[i].style.color = "green";
+}
