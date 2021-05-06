@@ -39,4 +39,39 @@ const siteContent = {
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
+
+let a = document.getElementsByTagName("a");
+a[0].innerHTML = siteContent["nav"]["nav-item-1"];
+a[1].innerHTML = siteContent["nav"]["nav-item-2"];
+a[2].innerHTML = siteContent["nav"]["nav-item-3"];
+a[3].innerHTML = siteContent["nav"]["nav-item-4"];
+a[4].innerHTML = siteContent["nav"]["nav-item-5"];
+a[5].innerHTML = siteContent["nav"]["nav-item-6"];
+
+document.getElementsByTagName("h1")[0].innerHTML = siteContent["cta"]["h1"];
+document.getElementsByTagName("button")[0].innerHTML = siteContent["cta"]["button"];
+document.getElementById("cta-img").setAttribute('src', siteContent["cta"]["img-src"]);
+
+let h4 = document.getElementsByTagName("h4");
+let p = document.getElementsByTagName("p");
+h4[0].innerHTML = siteContent["main-content"]["features-h4"];
+p[0].innerHTML = siteContent["main-content"]["features-content"];
+h4[1].innerHTML = siteContent["main-content"]["about-h4"];
+p[1].innerHTML = siteContent["main-content"]["about-content"];
+
+document.getElementById("middle-img").setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+h4[2].innerHTML = siteContent["main-content"]["services-h4"];
+p[2].innerHTML = siteContent["main-content"]["services-content"];
+h4[3].innerHTML = siteContent["main-content"]["product-h4"];
+p[3].innerHTML = siteContent["main-content"]["product-content"];
+h4[4].innerHTML = siteContent["main-content"]["vision-h4"];
+p[4].innerHTML = siteContent["main-content"]["vision-content"];
+
+h4[5].innerHTML = siteContent["contact"]["contact-h4"];
+p[5].innerHTML = siteContent["contact"]["address"];
+p[6].innerHTML = siteContent["contact"]["phone"];
+p[7].innerHTML = siteContent["contact"]["email"];
+
+p[8].innerHTML = siteContent["footer"]["copyright"];
